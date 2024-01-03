@@ -10,7 +10,9 @@
 
 \maketitle
 
-\section*{Horizon Tracking in SpECTRE}
+\section*{Horizon Tracking in SpECTRE with Task-Based Parallism}
+
+A feature of the Generalized Harmonic formulation of Einstein's Equations (using the Damped Harmonic gauge condition), is that the physical singularities of the horizons are not removed by the gauge condition (like in moving punctures). Thus, they must be removed by another method; namely, excision. However, to keep the excision regions within the horizons, horizon tracking is necessary. SpECTRE implements this horizon tracking using control theory to inform time-dependent coordinate mappings that dynamically adjust to keep the excision region inside the horizon. SpECTRE also utilizes task-based parallelism which adds additional subtle complications to the horizon tracking algorithm. Here I will present these complications and how SpECTRE's implementation of horizon tracking differs from the Spectral Einstein Code's (SpEC's) implementation.
 
 
 \end{document}
