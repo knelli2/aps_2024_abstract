@@ -1,0 +1,41 @@
+\ProvidesPackage{preamble}
+
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,siunitx,float,xr,braket,cancel,mathrsfs}
+\usepackage{mathtools,physics}
+\usepackage{tikz}
+\usepackage[margin=1.0in]{geometry}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{cite, float}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{tensind,tensor}
+\tensordelimiter{?}
+\usepackage{gensymb}
+\usepackage[framed,numbered]{matlab-prettifier}
+%\usepackage{floatrow}
+\usepackage{epstopdf}
+
+%parentheses and brackets and such
+\newcommand{\parens}[1]{\left( #1 \right)}
+\newcommand{\bracket}[1]{\left[ #1 \right]}
+\newcommand{\braced}[1]{\left\{ #1\right\}}
+\newcommand{\avg}[1]{\langle #1 \rangle}
+
+%math shortcuts
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\tehta}{\theta}
+\renewcommand{\inf}{\infty}
+\newcommand{\qqquad}{\quad\qquad}
+\newcommand{\qqqquad}{\qquad\qquad}
+\newcommand{\bs}{\boldsymbol}
+
+%misc
+\newcommand{\encircle}[1]{\tikz[baseline=(char.base)]{
+   \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand{\rnum}[1]{\MakeUppercase{\romannumeral #1}}
+
+\graphicspath{{pics/}}
